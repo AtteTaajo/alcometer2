@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { Switch, Alert, StyleSheet, Text, TextInput, View, Button } from 'react-native';
+import { Switch, Alert, StyleSheet, Text, TextInput, View, Button, ScrollView } from 'react-native';
 import NumericInput from 'react-native-numeric-input';
 import  {RadioButton} from 'react-native-paper';
 import { darkstyle, lightStyle } from './style/style.js';
@@ -47,7 +47,7 @@ export default function App() {
 
   return (
 
-    <View style={myStyle.container}>
+    <ScrollView style={myStyle.container}>
       <StatusBar style="auto"/>
       <View style={myStyle.swi}>
         <Switch
@@ -88,7 +88,7 @@ export default function App() {
           <Button title="Calculate" onPress={calculate}/>
         </View>  
       </View>
-    </View>
+    </ScrollView>
   );
 }
 

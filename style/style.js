@@ -4,8 +4,9 @@ const darkstyle = StyleSheet.create({
     container: {
         backgroundColor: '#362c29',
         flex: 1,
-        justifyContent: "center",
+        
         padding: 20,
+        paddingTop: 40,
     },
     alc: {
         color: "white",
@@ -66,6 +67,6 @@ const lightStyle = StyleSheet.create({
     test: {
         ...darkstyle.test,
     }
-})
+});
 
 export {darkstyle, lightStyle};
